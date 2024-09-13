@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Calorie-Protein-Tracker/static/css/main.e66e9e0e.css",
+    "main.js": "/Calorie-Protein-Tracker/static/js/main.155369b9.js",
+    "index.html": "/Calorie-Protein-Tracker/index.html",
+    "main.e66e9e0e.css.map": "/Calorie-Protein-Tracker/static/css/main.e66e9e0e.css.map",
+    "main.155369b9.js.map": "/Calorie-Protein-Tracker/static/js/main.155369b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e66e9e0e.css",
+    "static/js/main.155369b9.js"
+  ]
+}
