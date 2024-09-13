@@ -1,0 +1,117 @@
+/* CalorieCalculator.css */
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer le formulaire verticalement et horizontalement */
+  overflow: hidden; /* Assure que rien ne déborde */
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Derrière le formulaire */
+  display: flex;
+  flex-wrap: wrap; /* Pour s'assurer que les images couvrent toute la zone */
+  justify-content: center;
+}
+
+.photo-card {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.photo-card img {
+  width: 100vw; /* Prend toute la largeur de la vue */
+  height: 100vh; /* Prend toute la hauteur de la vue */
+  object-fit: cover; /* Couvre l'arrière-plan sans déformation */
+}
+
+.calculator-container {
+  position: relative;
+  padding: 30px;
+  background-color: rgba(14, 14, 14, 0.85); /* Fond semi-transparent */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(219, 216, 216, 0.2);
+  max-width: 400px;
+  width: 100%; /* Pour s'adapter à toutes les tailles d'écran */
+  margin: 20px auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.calculator-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-container h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.calculator-container div {
+  margin-bottom: 20px;
+}
+
+.calculator-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.calculator-container input,
+.calculator-container select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.calculator-container input:focus,
+.calculator-container select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.calculator-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.calculator-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
